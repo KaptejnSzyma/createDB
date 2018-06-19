@@ -3,7 +3,7 @@ import sqlite3
 db = sqlite3.connect("contacts.sqlite")
 
 new_email = "anotherupdate@update.com"
-phone = 1234
+phone = input("Please enter a phone number ")
 update_sql = "UPDATE contacts SET email = '{}' WHERE phone = {}".format(new_email, phone)
 
 update_cursor = db.cursor()
